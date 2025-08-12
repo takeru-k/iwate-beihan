@@ -212,6 +212,25 @@
   }
 }
 
+.c-button__area{
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px){
+  .c-button__area{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.c-button__link--alert{
+  background: #CC6900;
+  border-color: #CC6900;
+}
+
+.c-button__link--alert:hover{
+  color: #CC6900;
+}
 
 /*-------------------------
   ヘッダー

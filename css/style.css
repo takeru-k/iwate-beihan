@@ -524,6 +524,7 @@
 
 .p-desc{
   margin-top: 24px;
+   position: relative;
 }
 
 .p-desc__image img{
@@ -536,6 +537,10 @@
   margin-top: 8px;
   text-decoration: underline;
   font-size: 14px;
+}
+
+.p-desc__item{
+  min-width: 0;
 }
 
 .p-desc__item h3{
@@ -788,4 +793,48 @@ border-top: solid 1px #e6e6e6;
   .l-footer__nav{
     display: flex;
   }
+}
+
+/*================================
+	swiper
+=================================*/
+
+ .swiper {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.thumblist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.thumblist-item {
+  background-color: #000;
+  flex: 0 0 23.5%;
+  max-width: 23.5%;
+  margin: 2% 2% 0 0;
+  cursor: pointer;
+}
+.thumblist-item:nth-child(1) {
+  margin-top: 0;
+}
+.thumblist-item:nth-child(2) {
+  margin-top: 0;
+}
+.thumblist-item:nth-child(3) {
+  margin-top: 0;
+}
+.thumblist-item:nth-child(4) {
+  margin-top: 0;
+}
+.thumblist-item:nth-child(4n) {
+  margin-right: 0;
+}
+.thumblist-item img {
+  opacity: 0.5;
+}
+.thumblist-item.current img {
+  opacity: 1;
 }
